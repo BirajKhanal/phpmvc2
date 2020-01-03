@@ -1,0 +1,13 @@
+#if requested file is not found in public directory, redirects to index.php
+#rewrite base may differ
+#in simple words - everything goes through public/index.php 
+
+
+<IfModule mod_rewrite.c>
+  Options -Multiviews
+  RewriteEngine On
+  RewriteBase /phpmvc2/public
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>

@@ -1,0 +1,3 @@
+#remove access to file structure of the app folder
+
+Options -Indexes

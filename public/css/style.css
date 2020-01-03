@@ -1,0 +1,374 @@
+* {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+
+/*background image of car*/
+#bg {
+    background: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: 200px;
+    background-position-x: 800px;
+
+}
+
+/*To remove the underline effect of link*/
+.navbar li a {
+    text-decoration: none;
+}
+
+/*To remove the bullet of unordered list*/
+.navbar li {
+    list-style-type: none;
+}
+
+/*To bring the navbar down*/
+.head {
+    padding-top: 25px;
+}
+
+/*To position the navbar*/
+nav {
+    position: relative;
+    width: calc(100% - 60px);
+    height: 36px;
+    margin: 0 auto;
+    padding: 3px 0;
+    background: rgb(40, 60, 77);
+    text-align: right;
+    padding-right: 1%;
+}
+
+/*for logo to be center of navbar*/
+.logo {
+
+    float: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.logo img {
+    width: 35px;
+    height: 17px;
+}
+
+/*For list to in horizontal form*/
+.navbar li {
+    display: inline-block;
+}
+
+/*Navbar to be as it looks*/
+.navbar a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 10px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/*For the effect when hover over right side text in menu bar */
+.navbar a:hover {
+    background: tomato;
+    color: #fff;
+}
+
+
+/*ride view box */
+.rides {
+    margin: 50px 0px 0px 50px;
+    font-size: 20px;
+    width: 500px;
+    height: 500px;
+    overflow-y: auto;
+    border-radius: 2px;
+    box-shadow: 10px 10px 10px 0px gray;
+    color: rgb(161, 56, 56);
+    padding: 1%;
+    text-align: left;
+}
+
+.rides a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.edit_delete {
+    display: inline-block;
+}
+
+/*Login section animation style*/
+
+/*To center the login section */
+.bg-ls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15%;
+    
+    
+}
+
+/*login box design*/
+.ls-contain {
+    width: 20%;
+    height: 57%;
+    padding-top: 40px;
+    background: white;
+    box-shadow: 1px 10px 10px 10px #c6c1c1;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+/*Login box inner contain design*/
+
+/*form style manipulation*/
+.ls-contain form {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 2px;
+    color: rgb(0, 120, 156);
+    background-color: white;
+}
+
+/*Login button style*/
+.ls-contain form input[type="submit"] {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 15px;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    background: rgb(0, 120, 156);
+}
+
+/*form typying area design*/
+.ls-contain form input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    color: black;
+    border-radius: 12px;
+}
+
+
+/*signup page css starts*/
+/*welcome text manipulation*/
+h1 {
+    font-weight: 200;
+    text-align: center;
+    color:black;
+    font-size: 30pt;
+    padding-left: 33px;
+    margin: 7px 5px 8px 8px;
+}
+
+/*form size and background manipulation*/
+.register {
+    width: 40%;
+    margin: 20px auto 0px auto;
+    height: 500px;
+    background: #f7f7f7;
+    box-shadow: 1px 10px 10px 10px #c6c1c1;
+    border-radius: 20px;
+}
+
+/*padding of the reg. box*/
+.register {
+    padding-top: 20px;
+}
+
+/*input box thickness*/
+.register input {
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 200px;
+    color: #505050;
+    margin-right: 1px;
+    background-color: #f7f7f7;
+}
+
+/*remove the underline of 'have an account' */
+.register a {
+    text-decoration: none;
+}
+
+/*margin for 'have an account' */
+h2 {
+    margin-left: 10%;
+}
+
+/*p tag management*/
+form p {
+    clear: both;
+    margin: 0;
+    color: gray;
+    padding: 4px;
+    font-size: 18px
+}
+
+/*account detail feild*/
+form.register fieldset.row1 {
+
+    float: left;
+    border: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+}
+
+/*align the input boxes of account detail*/
+form.register fieldset.row1 label {
+    width: 140px;
+    float: left;
+    text-align: right;
+    margin-right: 6px;
+    margin-top: 2px;
+    padding-bottom: 20px;
+}
+
+/*register button*/
+.button {
+    background: #abda0f;
+    padding: 8px 10px 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    margin-left: 30%;
+    height: 60px;
+    width: 200px;
+    font-size: 35px;
+}
+
+#bgimg {
+    background-color: white;
+}
+
+.select a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.myride a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+/*add ride menu*/
+
+/*To center the login section */
+.bg-add {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*add ride box design*/
+.add-contain {
+    width: 350px;
+    height: 475px;
+    padding: 30px;
+    background: #f7f7f7;
+    box-shadow: 1px 10px 10px 10px #c6c1c1;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+/*add ride box inner contain design*/
+
+/*form style manipulation*/
+.add-contain form {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 2px;
+    color: rgb(0, 120, 156);
+}
+
+/*submit button style*/
+.add-contain form input[type="submit"] {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 50%;
+    height: 40px;
+    margin-left: 25%;
+    margin-top: 15px;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    background: rgb(0, 120, 156);
+}
+
+/*form typying area design*/
+.add-contain form input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    color: black;
+    border-radius: 12px;
+}
+
+/*For error message*/
+
+.error_first {
+    width: 28%;
+    padding: 1%;
+    margin-top: 2px;
+    margin-left: 30%;
+    color: red;
+}
+
+.error {
+    color: red;
+    float: left;
+    width: 15%;
+    padding: 1%;
+    margin-left: 55%;
+    text-align: left;
+    font-size: large;
+}

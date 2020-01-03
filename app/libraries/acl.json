@@ -1,0 +1,18 @@
+{
+    "Guest" : {
+        "denied" : {},
+        "Pages" : ["*"],
+        "Users" : ["login", "register"],
+        "Restricted" : ["*"]
+    },
+    "LoggedIn" : {
+        "denied" : {
+            "Users" : ["login", "register"],
+            "Restricted" : ["*"]
+        },
+        "Users" : ["logout"],
+        "Pages" : ["*"],
+        "Rides" : ["*"]
+        
+    }
+}
